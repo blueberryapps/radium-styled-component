@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Button with default style 1`] = `
+<button
+  data-radium="true"
+  style="padding-left:20px;"
+>
+  <span
+    data-radium="true"
+    style="color:red;"
+  >
+    Text
+  </span>
+</button>
+`;
+
+exports[`should render Button with default style merged with custom style (as array of objects) 1`] = `
+<button
+  data-radium="true"
+  style="padding-left:20px;text-transform:uppercase;margin-left:100px;"
+>
+  <span
+    data-radium="true"
+    style="color:blue;"
+  >
+    Text
+  </span>
+</button>
+`;
+
+exports[`should render Button with default style merged with custom style (as object) 1`] = `
+<button
+  data-radium="true"
+  style="padding-left:20px;"
+>
+  <span
+    data-radium="true"
+    style="color:red;text-transform:uppercase;"
+  >
+    Text
+  </span>
+</button>
+`;
+
+exports[`should render Button with default style overriden with custom style (as object) 1`] = `
+<button
+  data-radium="true"
+  style="padding-left:100px;"
+>
+  <span
+    data-radium="true"
+    style="color:red;"
+  >
+    Text
+  </span>
+</button>
+`;
