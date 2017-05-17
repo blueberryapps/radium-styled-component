@@ -1,13 +1,8 @@
-# XXX
+# radium-styled-component
 
-<!-- START RENAME -->
-# Create new package
-
-`
-bash <(curl https://raw.githubusercontent.com/blueberryapps/js-package-template/master/create-new-package) NEW_PACKAGE_NAME
-`
-
-<!-- END RENAME -->
+```
+yarn install radium-styled-component
+```
 
 ## Development
 
@@ -22,8 +17,8 @@ yarn test
 
 On Circle CI you need to add `NPM_TOKEN` which has rights to publish package to npmjs.org.
 
-Also when you provide `SLACK_TOKENS` XXX/YYY/ZZZZ
-(take them as one string from url `https://hooks.slack.com/services/XXX/YYY/ZZZ`)
+Also when you provide `SLACK_TOKENS` radium-styled-component/YYY/ZZZZ
+(take them as one string from url `https://hooks.slack.com/services/radium-styled-component/YYY/ZZZ`)
 it will let you know about new version.
 
 When code gets to master branch, it will try to publish,

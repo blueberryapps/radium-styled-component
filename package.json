@@ -1,8 +1,8 @@
 {
-  "name": "XXX",
+  "name": "radium-styled-component",
   "version": "0.1.0",
-  "private": true,
-  "description": "XXX",
+  "private": false,
+  "description": "radium-styled-component",
   "license": "MIT",
   "keywords": [],
   "author": "Blueberry Apps",
@@ -24,12 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blueberryapps/XXX.git"
+    "url": "git+https://github.com/blueberryapps/radium-styled-component.git"
   },
   "bugs": {
-    "url": "https://github.com/blueberryapps/XXX/issues"
+    "url": "https://github.com/blueberryapps/radium-styled-component/issues"
   },
-  "homepage": "https://github.com/blueberryapps/XXX/tree/master#readme",
+  "homepage": "https://github.com/blueberryapps/radium-styled-component/tree/master#readme",
   "jest": {
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
