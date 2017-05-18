@@ -28,6 +28,20 @@ exports[`should render Button with default style merged with custom style (as ar
 </button>
 `;
 
+exports[`should render Button with default style merged with custom style (as array of objects) 2`] = `
+<button
+  data-radium="true"
+  style="padding-left:20px;text-transform:uppercase;margin-left:100px;"
+>
+  <span
+    data-radium="true"
+    style="color:blue;"
+  >
+    Text
+  </span>
+</button>
+`;
+
 exports[`should render Button with default style merged with custom style (as object) 1`] = `
 <button
   data-radium="true"
