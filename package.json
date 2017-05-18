@@ -77,7 +77,6 @@
   },
   "dependencies": {
     "fast-memoize": "^2.2.7",
-    "immutable": "^3.8.1",
     "radium": "^0.19.0"
   },
   "peerDependencies": {
