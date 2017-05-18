@@ -1,6 +1,6 @@
 {
   "name": "radium-styled-component",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "description": "radium-styled-component",
   "license": "MIT",
@@ -76,6 +76,7 @@
     "rimraf": "^2.6.1"
   },
   "dependencies": {
+    "fast-memoize": "^2.2.7",
     "immutable": "^3.8.1",
     "radium": "^0.19.0"
   },
