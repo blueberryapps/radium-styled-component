@@ -53,10 +53,3 @@ export function createStyledComponent(constants) {
 
 const StyledComponent = createStyledComponent({});
 export default StyledComponent;
-
-
-// StyledComponent.react.js
-//
-// import {createStyledComponent} from 'styled-comonent'
-// const StyledComponent = createStyledComponent({colors: {red: '#f00'}});
-// export default StyledComponent;
