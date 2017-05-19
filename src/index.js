@@ -47,8 +47,11 @@ export function createStyledComponent(constants) {
     }
 
     getStyle(overrideStyle) {
-      const { children, style, ...restProps } = this.props;
-      return memoizeGetStyle(overrideStyle, this.constructor.style, style, constants, restProps);
+      const { style, ...restProps } = this.props;
+      const fixedProps = Object.keys(restProps)
+        .filter(key => typeof restProps[key] === 'string' || typeof restProps[key] === 'number' || typeof restProps[key] === 'boolean')
+        .reduce((acc, key) => ({ ...acc, [key]: restProps[key] }), {});
+      return memoizeGetStyle(overrideStyle, this.constructor.style, style, constants, fixedProps);
     }
   };
 }
