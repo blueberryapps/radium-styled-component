@@ -1,5 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render Button and Button2 with different styles 1`] = `
+<div>
+  <button
+    data-radium="true"
+    style="padding-left:20px;"
+  >
+    <span
+      data-radium="true"
+      style="color:red;"
+    >
+      Text
+    </span>
+  </button>
+  <button
+    data-radium="true"
+    style="padding-left:30px;"
+  >
+    <span
+      data-radium="true"
+      style="color:blue;"
+    >
+      Text
+    </span>
+  </button>
+</div>
+`;
+
 exports[`should render Button with default style 1`] = `
 <button
   data-radium="true"
@@ -68,4 +95,58 @@ exports[`should render Button with default style overriden with custom style (as
     Text
   </span>
 </button>
+`;
+
+exports[`should render Button with passed styles and different styles 1`] = `
+<div>
+  <button
+    data-radium="true"
+    style="padding-left:5px;"
+  >
+    <span
+      data-radium="true"
+      style="color:red;"
+    >
+      Text
+    </span>
+  </button>
+  <button
+    data-radium="true"
+    style="padding-left:10px;"
+  >
+    <span
+      data-radium="true"
+      style="color:red;"
+    >
+      Text
+    </span>
+  </button>
+</div>
+`;
+
+exports[`should render Button2 with passed styles and different styles 1`] = `
+<div>
+  <button
+    data-radium="true"
+    style="padding-left:5px;"
+  >
+    <span
+      data-radium="true"
+      style="color:blue;"
+    >
+      Text
+    </span>
+  </button>
+  <button
+    data-radium="true"
+    style="padding-left:10px;"
+  >
+    <span
+      data-radium="true"
+      style="color:blue;"
+    >
+      Text
+    </span>
+  </button>
+</div>
 `;
