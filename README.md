@@ -1,4 +1,4 @@
-# radium-styled-component [![CircleCI](https://circleci.com/gh/blueberryapps/radium-styled-component.svg?style=svg&circle-token=40963ad3adc27dc689c0fa49218ce3290a94b338)](https://circleci.com/gh/blueberryapps/radium-styled-component)
+# radium-styled-component [![CircleCI](https://circleci.com/gh/blueberryapps/radium-styled-component.svg?style=svg&circle-token=40963ad3adc27dc689c0fa49218ce3290a94b338)](https://circleci.com/gh/blueberryapps/radium-styled-component) [![Dependency Status](https://dependencyci.com/github/blueberryapps/radium-styled-component/badge)](https://dependencyci.com/github/blueberryapps/radium-styled-component)
 
 ```
 yarn install radium-styled-component
