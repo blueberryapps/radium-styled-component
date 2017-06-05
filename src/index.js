@@ -2,7 +2,14 @@ import { PureComponent, PropTypes as RPT } from 'react';
 import memoize from 'fast-memoize';
 
 function deepMergeObject(rootAcc, element) {
-  if (typeof element === 'string' || typeof element === 'number' || typeof element === 'function') {
+  if (
+    typeof element === 'string' ||
+    typeof element === 'number' ||
+    typeof element === 'function' ||
+    typeof element === 'undefined' ||
+    typeof element === 'boolean' ||
+    element === null
+  ) {
     return element;
   }
 

@@ -34,6 +34,14 @@ it('should merge objects 5', () => {
   expect(deepMerge(a, b, c)).toEqual({ a: { b: 1, c: 2 }, d: 3, g: 17 });
 });
 
+it('should merge objects with different values', () => {
+  const g = () => {};
+  const b = { a: { b: true, c: undefined } };
+  const a = { a: { d: null, g } };
+  const c = { g: 17 };
+  expect(deepMerge(a, b, c)).toEqual({ a: { b: true, c: undefined, d: null, g }, g: 17 });
+});
+
 it('memoized gets style for large objects is faster', () => {
   const dateFirst = new Date();
   for (let i = 0; i < 10000; i += 1) {
