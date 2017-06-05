@@ -78,6 +78,28 @@ class Button extends StyledComponent {
   }
 }
 
+@Radium
+class Button2 extends StyledComponent {
+  render() {
+    const style = this.getStyle();
+    return (
+      <button style={style.button}>
+        <span style={style.text}>Text</span>
+      </button>
+    );
+  }
+
+  static style = () => ({
+    button: {
+      paddingLeft: '30px'
+    },
+    text: {
+      color: 'blue'
+    }
+  })
+}
+
+
 it('should render Button with default style', () => {
   expect(render(<Button />)).toMatchSnapshot();
 });
@@ -96,4 +118,16 @@ it('should render Button with default style merged with custom style (as array o
 
 it('should render Button with default style merged with custom style (as array of objects)', () => {
   expect(render(<Button style={[{ button: { textTransform: 'uppercase' } }, () => ({ button: { marginLeft: '100px' } }), { text: { color: 'blue' } }]} />)).toMatchSnapshot();
+});
+
+it('should render Button and Button2 with different styles', () => {
+  expect(render(<div><Button /><Button2 /></div>)).toMatchSnapshot();
+});
+
+it('should render Button with passed styles and different styles', () => {
+  expect(render(<div><Button style={{ button: { paddingLeft: '5px' } }} /><Button style={{ button: { paddingLeft: '10px' } }} /></div>)).toMatchSnapshot();
+});
+
+it('should render Button2 with passed styles and different styles', () => {
+  expect(render(<div><Button2 style={{ button: { paddingLeft: '5px' } }} /><Button2 style={{ button: { paddingLeft: '10px' } }} /></div>)).toMatchSnapshot();
 });
